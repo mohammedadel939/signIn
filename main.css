@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    color: #f3f3f3;
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    min-height: 100vh;
+}
+
+@media(min-width:750px) {
+    .container {
+        width: 700px;
+        margin: auto;
+        padding: 15px;
+        min-height: 100vh;
+    }
+}
+.ovarvuow {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    background-image: url('./images/pexels-fauxels-3184432.jpg');
+    background-size: cover;
+    background-color: #eee;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+}
+.ovarvuow::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(58, 58, 158, 0.8);
+     z-index: -1;
+}
+
+
+.title {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.title {
+    margin-bottom: 1.875rem;
+}
+
+form {
+    border-radius: 5px;
+    padding: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(27, 27, 50, 0.8);
+}
+@media(max-width:550px) {
+    form {
+        padding: 0.5rem;
+    }
+}
+form .cont {
+    margin-bottom: 20px;
+}
+form .col {
+   display: flex;
+   flex-direction: column;
+}
+
+form .mar , 
+form .hid {
+   margin-bottom: 8px;
+}
+form .wid {
+   width: 100%;
+   height: 2.375rem;
+   padding: 0.375rem 0.75rem;
+   border-radius: 0.25rem;
+   border: 1px solid #ced4da;
+}
+form .wid:hover,
+form .wid:focus {
+border: solid 1px blue;
+outline: none;
+}
+form .textareia {
+
+   height:150px;
+
+}
+
+
+/* start footer */
+.footer {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(27, 27, 50, 0.8);;
+}
+
+@media(min-width:550px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+.footer p span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2196f3;
+    margin: 0;
+}
+
+.footer .link {
+    padding: 0 10px;
+}
+
+.footer .link i {
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+
+.footer .link a {
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+/* end footer */
